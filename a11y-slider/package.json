@@ -1,0 +1,99 @@
+{
+  "_from": "a11y-slider",
+  "_id": "a11y-slider@0.4.22",
+  "_inBundle": false,
+  "_integrity": "sha512-EPbpYEpeTSkBuS12yPUkKZ3JtQE/lDqhpAtZ4J7rBUAvdB0EvkTwH/VX9ytXVZlRLJrnTUm4MaWLw8BUaj5pXQ==",
+  "_location": "/a11y-slider",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "a11y-slider",
+    "name": "a11y-slider",
+    "escapedName": "a11y-slider",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/a11y-slider/-/a11y-slider-0.4.22.tgz",
+  "_shasum": "9e66891d63571a02f9195f655268501218078ba1",
+  "_spec": "a11y-slider",
+  "_where": "C:\\Users\\greyf\\Desktop\\Web Dev\\Kevin_Powell\\manage-landing-page",
+  "author": {
+    "name": "mmahandev"
+  },
+  "browser": "dist/a11y-slider.js",
+  "bugs": {
+    "url": "https://github.com/mmahandev/a11y-slider/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Library for accessible sliders",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.1",
+    "@babel/plugin-transform-typescript": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
+    "core-js": "^3.6.4",
+    "np": "^7.0.0",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.23.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "ts-debounce": "^2.0.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.5"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/mmahandev/a11y-slider",
+  "keywords": [
+    "accessible",
+    "slider",
+    "carousel",
+    "javascript",
+    "typescript",
+    "library",
+    "es6",
+    "js",
+    "accessibility",
+    "a11y"
+  ],
+  "license": "MIT",
+  "main": "dist/a11y-slider.cjs.js",
+  "module": "dist/a11y-slider.esm.js",
+  "name": "a11y-slider",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmahandev/a11y-slider.git"
+  },
+  "scripts": {
+    "build": "npm run rollup:build && npm run build:types",
+    "build:types": "tsc --emitDeclarationOnly",
+    "dev": "npm run rollup:watch",
+    "dev:web": "npm run rollup:watch -- --environment WEB",
+    "prebuild": "rimraf dist",
+    "release": "np patch && cd web/ && npm run deployLatest",
+    "rollup:build": "rollup -c",
+    "rollup:watch": "rollup -c -w",
+    "test": "",
+    "version": "npm run build && git add -u"
+  },
+  "style": "dist/a11y-slider.css",
+  "types": "dist/types/index.d.ts",
+  "unpkg": "dist/a11y-slider.js",
+  "version": "0.4.22"
+}
