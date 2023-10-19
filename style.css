@@ -230,7 +230,7 @@ p[data-width="wide"] {
   .primary-header[data-overlay]::before {
     content: '';
     position: fixed;
-    inset: 0 0 -50px 0;
+    inset: 0 0 -150px 0;
     background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.8));
   }
 
